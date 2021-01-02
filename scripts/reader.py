@@ -162,7 +162,7 @@ def format_create_table(name: str, fields: Dict[str, str]) -> str:
 
     return f"CREATE TABLE {name}(\n  {delim.join(types)}\n);"
 
-def generate_schema() -> str:
+def generate_schema():
     results: [str] = []
 
     results = [
