@@ -1,0 +1,35 @@
+name: GenerateTechniqueDocumentation
+
+on:
+    push:
+        branches: [ master ]
+
+jobs:
+    documentation:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+
+        - uses: docker://pandoc/core:latest
+          with:
+              args: |>
+                docs/csv_to_sql.md # input
+                -s # standalone
+                -o csv_to_sql.tex # output
+                --toc --toc-depth=5 # table of contents
+
+        - name: Compile LaTeX
+          uses: xu-cheng/latex-action@v2
+          with:
+              root_file: csv_to_sql.tex
+
+        - name: Upload PDF
+          uses: svenstaro/upload-release-action@v2
+          with:
+              repo_token: ${{ secrets.GITHUB_TOKEN }}
+              file: csv_to_sql.pdf
+              asset_name: csv_to_sql.pdf
+              tag: ${{ github.ref }}
+              overwrite: true
+              body: ""
