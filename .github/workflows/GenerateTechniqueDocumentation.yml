@@ -13,11 +13,7 @@ jobs:
 
         - uses: docker://pandoc/core:latest
           with:
-              args: |>
-                docs/csv_to_sql.md # input
-                -s # standalone
-                -o csv_to_sql.tex # output
-                --toc --toc-depth=5 # table of contents
+              args: docs/csv_to_sql.md --standalone --output=csv_to_sql.tex --toc --toc-depth=5
 
         - name: Compile LaTeX
           uses: xu-cheng/latex-action@v2
