@@ -1,4 +1,4 @@
-name: GenerateTechniqueDocumentation
+name: SQLCodeGeneration
 
 on:
     push:
