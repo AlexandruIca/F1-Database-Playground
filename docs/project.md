@@ -919,7 +919,7 @@ DROP TABLE test_table;
 ![](../media/demo_12.png)
 
 # Cerința 13
-Am pus tot codul într-un pachet numit `f1`, în fișierul `f1.sql`.
+Am pus tot codul într-un pachet numit `f1`, în fișierul sursă atașat.
 
 # P.S.
 Probabil că tot codul pus aici în PDF nu arată excepțional; se poate vedea proiectul meu și aici(include tot ce
