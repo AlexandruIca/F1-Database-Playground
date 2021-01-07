@@ -1,5 +1,6 @@
 ![TechniqueDocs](https://github.com/AlexandruIca/SGBD/workflows/GenerateTechniqueDocumentation/badge.svg)
 ![ProjectDocumentation](https://github.com/AlexandruIca/SGBD/workflows/ProjectDocumentation/badge.svg)
+![Datalog](https://github.com/AlexandruIca/SGBD/workflows/Datalog/badge.svg)
 
 # SGBD Project
 Some scripts that manipulate an F1 database. Data is taken from [here](https://ergast.com/mrd/db/).
