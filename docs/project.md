@@ -919,7 +919,8 @@ DROP TABLE test_table;
 ![](../media/demo_12.png)
 
 # P.S.
-Probabil că tot codul pus aici în PDF nu arată excepțional; se poate vedea proiectul meu și aici:
+Probabil că tot codul pus aici în PDF nu arată excepțional; se poate vedea proiectul meu și aici(include tot ce
+trebuie pentru baza de date):
 
 https://github.com/AlexandruIca/SGBD
 
