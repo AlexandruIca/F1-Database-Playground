@@ -13,8 +13,14 @@ jobs:
 
         - uses: docker://pandoc/core:latest
           with:
-              args: --resource-path=docs/ -i docs/project.md -s -o project.pdf --toc --toc-depth=5
+              args: --resource-path=docs/ -i docs/project.md -s -o docs/project.tex --toc --toc-depth=5
 
+        - uses: xu-cheng/latex-action@v2
+          with:
+              pre_compile: |
+                  cd docs/
+              root_file: |
+                  project.tex
 
         - name: Upload PDF
           uses: svenstaro/upload-release-action@v2
