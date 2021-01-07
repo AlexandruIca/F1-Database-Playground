@@ -115,7 +115,7 @@ INSERT INTO pit_stops (
   ''
 );
 
-UPDATE test_pit_stops
+UPDATE pit_stops
 SET
   driver_id = 0
 WHERE
