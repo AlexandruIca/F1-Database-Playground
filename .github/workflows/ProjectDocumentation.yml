@@ -1,0 +1,27 @@
+name: ProjectDocumentation
+
+on:
+    push:
+        branches: [ master ]
+
+jobs:
+    documentation:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+
+        - uses: docker://pandoc/core:latest
+          with:
+              args: --resource-path=docs/ -i docs/project.md -s -o project.pdf --toc --toc-depth=5
+
+
+        - name: Upload PDF
+          uses: svenstaro/upload-release-action@v2
+          with:
+              repo_token: ${{ secrets.GITHUB_TOKEN }}
+              file: project.pdf
+              asset_name: project.pdf
+              tag: ${{ github.ref }}
+              overwrite: true
+              body: ""
