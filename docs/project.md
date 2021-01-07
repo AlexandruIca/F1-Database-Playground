@@ -918,9 +918,12 @@ DROP TABLE test_table;
 ## Demo
 ![](../media/demo_12.png)
 
+# Cerința 13
+Am pus tot codul într-un pachet numit `f1`, în fișierul `f1.sql`.
+
 # P.S.
 Probabil că tot codul pus aici în PDF nu arată excepțional; se poate vedea proiectul meu și aici(include tot ce
-trebuie pentru baza de date):
+trebuie pentru baza de date, aici se găsesc toate script-urile care inserează datele în tabele):
 
 https://github.com/AlexandruIca/SGBD
 
