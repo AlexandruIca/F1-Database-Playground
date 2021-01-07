@@ -917,3 +917,12 @@ DROP TABLE test_table;
 
 ## Demo
 ![](../media/demo_12.png)
+
+# P.S.
+Probabil că tot codul pus aici în PDF nu arată excepțional; se poate vedea proiectul meu și aici:
+
+https://github.com/AlexandruIca/SGBD
+
+Documentația se mai poate vedea și aici:
+
+https://github.com/AlexandruIca/SGBD/blob/master/docs/project.md
