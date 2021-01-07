@@ -86,8 +86,8 @@ def read_races():
         }))
 
 def read_drivers():
-    def filter_quotes(s: str):
-        s = s.replace("'", '`')
+    def filter_quotes(s: str) -> str:
+        return s.replace("'", '`')
 
     for row in generate_rows(input_file='./drivers.csv'):
         print(format_insert_statement(table_names['drivers'], {
