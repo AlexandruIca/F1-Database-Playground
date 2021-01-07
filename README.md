@@ -1,4 +1,4 @@
-![TechniqueDocs](https://github.com/AlexandruIca/SGBD/workflows/GenerateTechniqueDocumentation/badge.svg)
+![SQLCodeGeneration](https://github.com/AlexandruIca/SGBD/workflows/SQLCodeGeneration/badge.svg)
 ![ProjectDocumentation](https://github.com/AlexandruIca/SGBD/workflows/ProjectDocumentation/badge.svg)
 ![Datalog](https://github.com/AlexandruIca/SGBD/workflows/Datalog/badge.svg)
 
