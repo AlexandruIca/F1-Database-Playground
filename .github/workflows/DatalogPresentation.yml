@@ -1,0 +1,31 @@
+name: Datalog
+
+on:
+    push:
+        branches: [ master ]
+
+jobs:
+    documentation:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+
+        - uses: docker://pandoc/core:latest
+          with:
+              args: -i docs/datalog.md -s -o datalog.tex --toc --toc-depth=5
+
+        - uses: xu-cheng/latex-action@v2
+          with:
+              root_file: |
+                  datalog.tex
+
+        - name: Upload PDF
+          uses: svenstaro/upload-release-action@v2
+          with:
+              repo_token: ${{ secrets.GITHUB_TOKEN }}
+              file: datalog.pdf
+              asset_name: datalog.pdf
+              tag: ${{ github.ref }}
+              overwrite: true
+              body: ""
